@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background-color: #000000;
+  color: #e5e7eb;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+@keyframes pulse {
+  50% {
+    transform: translateY(4px);
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
