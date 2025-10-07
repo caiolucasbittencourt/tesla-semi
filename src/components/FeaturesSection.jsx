@@ -24,7 +24,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-24 bg-black">
+    <section id="features" className="py-1 bg-black">
       {features.map((feature, index) => {
         const orderClassText = feature.reverse ? "lg:order-2" : "";
         const orderClassImage = feature.reverse ? "lg:order-1" : "";
@@ -32,7 +32,7 @@ export default function FeaturesSection() {
         return (
           <div
             key={index}
-            className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
+            className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className={`space-y-4 ${orderClassText}`}>
@@ -44,7 +44,6 @@ export default function FeaturesSection() {
                 </p>
               </div>
               <div className={orderClassImage}>
-                {/* 2. Substitua a tag <img> pela tag <video> */}
                 <video
                   src={feature.video}
                   autoPlay
@@ -52,7 +51,7 @@ export default function FeaturesSection() {
                   muted
                   playsInline
                   className="w-full h-auto object-cover rounded-lg"
-                  aria-label={feature.title} // Adicionado para acessibilidade
+                  aria-label={feature.title}
                 />
               </div>
             </div>

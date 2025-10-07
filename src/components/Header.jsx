@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function Header() {
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <a href="#" title="Tesla">
+              <Link to="/" title="Tesla">
                 <svg
                   className="h-10 w-auto text-white"
                   xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +31,7 @@ export default function Header() {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center space-x-2">
@@ -39,27 +40,27 @@ export default function Header() {
                   <a
                     key={link.text}
                     href={link.href}
-                    className="text-sm font-medium text-gray-200 hover:bg-black py-2 px-3 rounded-md transition-all duration-200"
+                    className="text-sm font-medium text-gray-400 hover:text-white py-2 px-3 rounded-md transition-all duration-200"
                   >
                     {link.text}
                   </a>
                 ))}
                 <a
                   href="#"
-                  className="text-sm font-medium text-gray-200 hover:bg-black py-2 px-3 rounded-md transition-all duration-200"
+                  className="text-sm font-medium text-gray-400 hover:text-white py-2 px-3 rounded-md transition-all duration-200"
                 >
                   Shop
                 </a>
-                <a
-                  href="#"
-                  className="text-sm font-medium text-gray-200 hover:bg-black py-2 px-3 rounded-md transition-all duration-200"
+                <Link
+                  to="/login"
+                  className="text-sm font-medium text-gray-400 hover:text-white py-2 px-3 rounded-md transition-all duration-200"
                 >
                   Account
-                </a>
+                </Link>
               </nav>
               <button
                 onClick={() => setIsMenuOpen(true)}
-                className="lg:hidden text-gray-200 bg-black p-2 rounded-md transition-all duration-200"
+                className="lg:hidden text-gray-200 p-2 rounded-md transition-all duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,13 +125,13 @@ export default function Header() {
           >
             Shop
           </a>
-          <a
-            href="#"
+          <Link
+            to="/login"
             onClick={() => setIsMenuOpen(false)}
             className="text-gray-300 hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium"
           >
             Account
-          </a>
+          </Link>
         </nav>
       </div>
 
