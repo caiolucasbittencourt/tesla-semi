@@ -1,3 +1,5 @@
+import FadeInSection from "./FadeInSection";
+
 const features = [
   {
     title: "Lowest Cost of Ownership",
@@ -36,23 +38,28 @@ export default function FeaturesSection() {
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className={`space-y-4 ${orderClassText}`}>
-                <h2 className="text-2xl sm:text-3xl font-bold text-white">
-                  {feature.title}
-                </h2>
-                <p className="text-base text-gray-400 leading-relaxed">
-                  {feature.description}
-                </p>
+                <FadeInSection>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white">
+                    {feature.title}
+                  </h2>
+                  <p className="text-base text-gray-400 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </FadeInSection>
               </div>
+
               <div className={orderClassImage}>
-                <video
-                  src={feature.video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto object-cover rounded-lg"
-                  aria-label={feature.title}
-                />
+                <FadeInSection delay={0.2}>
+                  <video
+                    src={feature.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto object-cover rounded-lg"
+                    aria-label={feature.title}
+                  />
+                </FadeInSection>
               </div>
             </div>
           </div>
