@@ -5,7 +5,7 @@
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2306B6D4.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-Page do Tesla Semi desenvolvido para praticar conceitos de front-end com React e Tailwind CSS.
+Projeto que une **design (UX/UI)** e **desenvolvimento front-end**. Uma proposta conceitual para o site do Tesla Semi, construída com **Tailwind CSS**.
 
 ## Funcionalidades
 
