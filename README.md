@@ -22,3 +22,11 @@ Projeto que une **design (UX/UI)** e **desenvolvimento front-end**. Uma proposta
 - Vite
 - Tailwind CSS
 - HTML5 & CSS3
+
+## Instalação
+
+```bash
+git clone https://github.com/caiolucasbittencourt/tesla-semi
+cd tesla-semi
+npm install
+npm run dev
