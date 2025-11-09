@@ -14,7 +14,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <div className="absolute bottom-15 left-1/2 -translate-x-1/2 flex flex-col items-center">
           <span className="text-white/70 text-sm uppercase tracking-widest mb-2 opacity-80">
             Scroll
           </span>
